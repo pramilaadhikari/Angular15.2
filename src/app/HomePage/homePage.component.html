@@ -1,0 +1,81 @@
+
+  <!-- <div style="text-align:center">
+    <h1>Welcome to {{title}} </h1>
+    </div>
+  
+    <div class="table-responsive">
+        <ul class="nav navbar-nav">
+          <li><a [routerLink]="['/login']">Login</a></li>
+          <li><a [routerLink]="['/registration']">Open an Account?</a></li>
+        </ul>
+        <router-outlet></router-outlet>
+    </div>
+  <div> 
+</div> -->
+
+<div class="panel" style="background: url('assets/image1.png');background-size:cover; ">
+
+<style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: rgb(223, 193, 224);
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    /* Change the link color to #111 (black) on hover */
+    li a:hover {
+      background-color: #111;
+    }
+    h1 {
+      width: 200px;
+      
+      height: 100px;
+      
+      background: url('logo.png');
+      
+      text-indent: -9999px;
+      
+      }
+      .bg {
+        /* The image used */
+        background-image: url('/asset/image.jpg');
+      
+        /* Full height */
+        height: 100%; 
+      
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+       
+      }
+    </style>
+     
+    <ul class="nav navbar-nav">
+    <li><a [routerLink]="['/']">HOME</a></li>
+    <li><a [routerLink]="['/']">ABOUT US</a></li>
+   
+    <li><a [routerLink]="['/login']">LOGIN</a></li>
+    <li><a [routerLink]="['/registration']">NEW REGISTRATION</a></li>
+    
+    </ul>
+    <div class="bg"></div>
+    <div class='container'>
+    <router-outlet></router-outlet>
+  
+   
+  </div>

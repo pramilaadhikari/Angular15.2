@@ -1,0 +1,48 @@
+<div class="panel" style="background-color:rgb(212,237,245)">
+    <div style="text-align: center">
+    
+ <div class="panel-body">
+         
+ <div class="table-responsive">
+     <h1>Account Statement</h1>
+
+      <label for="date"><b>From:</b></label>
+        <input type="date"  /> 
+        <label for="date"><b>To:</b></label>
+        <input type="date"  /><br><br> 
+        <!-- <lable for="date">From :</lable>
+        <input type="date"[ngModel]="dt | date:'yyyy-MM-dd'"(ngModelChange)="dt =$event" -->
+
+        <button type="submit"><b>Show</b></button> 
+<table class ="table" style="text-align:center">
+ <table border="2px" class="table">
+     <thead>
+         <tr>
+             <th>Transaction ID</th>
+             <th>Amount</th>
+             <th>Account Type</th>
+             <th>Account Number</th>
+             <th>Account Type</th>
+           
+         </tr>
+     </thead>
+     <tbody>
+         <tr>
+            <td>{{statement.transid}}</td>
+            <td>{{statement.amount}}</td>
+            <td>{{statement.type}}</td>
+             <td>{{statement.acc_no}}</td>
+             <td>{{statement.Account.name}}</td>
+           
+
+             
+            
+         </tr>
+        
+     </tbody>
+ </table>
+</table>
+</div>
+</div>
+</div>
+</div>

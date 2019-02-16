@@ -1,0 +1,19 @@
+      <h3>Welcome back, {{ name }} ID Is  {{ customerId }}</h3>
+        <ul class="sidenav">
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a [routerLink]="['/accountdetails']">ACCOUNT DETAILS</a></li>
+            <li><a [routerLink]="['/transfer']">FUND TRANSFER</a></li>
+            <li><a [routerLink]="['/AccState']">ACCOUNT STATEMENT</a></li>
+          </ul>
+          
+          <div class="content">
+           
+                <router-outlet></router-outlet>
+          </div>
+
+          
+        
+
+
+
+       
